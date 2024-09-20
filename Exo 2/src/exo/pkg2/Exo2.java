@@ -8,30 +8,33 @@ package exo.pkg2;
  *
  * @author alois
  */
+import java.util.Scanner; // Import de la classe Scanner
+
 public class Exo2 {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-    // Déclaration des variables
-    int nb; // nombre d'entiers à additionner
-    int result; // résultat
-    int ind; // indice
+        // Déclaration des variables
+        int nb; // nombre d'entiers à additionner
+        int result; // résultat
+        int ind; // indice
 
-    nb = 5;
-    result = 0;
+        // Utilisation de Scanner pour la saisie du nombre d'entiers à additionner
+        Scanner sc = new Scanner(System.in);
+        System.out.println("\nEntrer le nombre d'entiers a additionner :");
+        nb = sc.nextInt(); 
 
-    // Addition des nb premiers entiers
-    ind = 1;
-    while (ind <= nb) {
-        result = result + ind;
-        ind++; // Incrémentation de l'indice pour éviter la boucle infinie
+        result = 0;
+
+        // Addition des nb premiers entiers
+        ind = 1;
+        while (ind <= nb) {
+            result = result + ind;
+            ind++; 
+        }
+
+        // Affichage du résultat
+        System.out.println("La somme des " + nb + " premiers entiers est : " + result);
+
+        sc.close();
     }
-
-    // Affichage du résultat
-    System.out.println("La somme des " + nb + " premiers entiers est : " + result);
 }
 
-    
-}
