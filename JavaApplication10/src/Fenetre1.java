@@ -34,6 +34,14 @@ public class Fenetre1 extends javax.swing.JFrame {
 
         testeintro.setText("Rentre ton nom de famille");
 
+        zoneSaisie.setBackground(new java.awt.Color(204, 204, 204));
+        zoneSaisie.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                zoneSaisieActionPerformed(evt);
+            }
+        });
+
+        monbouton.setBackground(new java.awt.Color(102, 255, 102));
         monbouton.setText("OK");
         monbouton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -70,8 +78,8 @@ public class Fenetre1 extends javax.swing.JFrame {
                     .addComponent(zoneSaisie, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(monbouton))
                 .addGap(33, 33, 33)
-                .addComponent(resultat, javax.swing.GroupLayout.PREFERRED_SIZE, 8, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(142, Short.MAX_VALUE))
+                .addComponent(resultat, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(130, Short.MAX_VALUE))
         );
 
         pack();
@@ -82,6 +90,10 @@ public class Fenetre1 extends javax.swing.JFrame {
      prenom = zoneSaisie.getText();
      resultat.setText("le nom est " + prenom ) ;  
     }//GEN-LAST:event_monboutonActionPerformed
+
+    private void zoneSaisieActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_zoneSaisieActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_zoneSaisieActionPerformed
 
   
     /**

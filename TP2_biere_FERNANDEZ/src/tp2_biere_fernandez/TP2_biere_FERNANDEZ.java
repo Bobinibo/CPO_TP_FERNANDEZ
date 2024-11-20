@@ -54,6 +54,7 @@ class BouteilleBiere {
         System.out.println("Bouteille de " + nom + " (" + degreAlcool + " degres)\nBrasserie : " + brasserie);
     }
 
+    // Méthode pour décapsuler la bière
     public boolean decapsuler() {
         if (!ouverte) {
             ouverte = true;
@@ -65,6 +66,7 @@ class BouteilleBiere {
         }
     }
 
+    // Redéfinition de la méthode toString
     @Override
     public String toString() {
         String chaine_a_retourner;

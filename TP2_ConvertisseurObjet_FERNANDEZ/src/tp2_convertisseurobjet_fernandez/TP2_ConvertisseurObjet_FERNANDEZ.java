@@ -74,6 +74,8 @@ public class TP2_ConvertisseurObjet_FERNANDEZ {
             System.out.println(convertisseur1.toString());
         }
 
+        System.out.println("Nombre de conversions effectuées par le convertisseur 1 : " + convertisseur1);
+        System.out.println("Nombre de conversions effectuées par le convertisseur 2 : " + convertisseur2);
 
         sc.close();
     }
